@@ -5,5 +5,5 @@ const recipeRouter = express.Router();
 
 recipeRouter.get("/search/:query", searchRecipe);
 recipeRouter.get("/recipeDetails/:id", searchRecipeById);
-recipeRouter.get("/quickAns", quickAns);
+recipeRouter.get("/quickAns/:q", quickAns); 
 module.exports = recipeRouter;
