@@ -12,7 +12,10 @@ const authRouter = require('./Router/authRoute');
 require("dotenv").config();
 const app = express(); // Initialize the express app first
 app.use(express.json());
-app.use(cors());  // Enable all CORS requests (now placed after app initialization)
+app.use(cors({
+  origin: 'https://tasty-treasure-gamma.vercel.app',
+}));
+
 
 const port = process.env.PORT || 5000;
 
