@@ -17,7 +17,7 @@ authRouter.post("/google", async (req, res) => {
       code,
       client_id: process.env.GOOGLE_CLIENT_ID,
       client_secret: process.env.GOOGLE_CLIENT_SECRET,
-      redirect_uri: "https://tasty-treasure-gamma.vercel.app",
+      redirect_uri: "postmessage",
       grant_type: "authorization_code",
     });
 
